@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Applications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f9fafc;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .status-applied {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .status-accepted {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .status-rejected {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<head th:replace="~{fragments_header :: header}"></head>
+<body>
+ <nav th:replace="~{FragmentNavbar :: navbar}"></nav>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">My Applications</h1>
+    <div class="row">
+        <div th:if="${applications.isEmpty()}" class="text-center text-muted">
+            <p>No applications found.</p>
+        </div>
+        <div th:each="app : ${applications}" class="col-md-4 mb-4">
+            <div class="card p-3">
+                <h4 th:text="${app.job.title}"></h4>
+                <p><strong>Company:</strong> <span th:text="${app.job.company}"></span></p>
+                <p><strong>Location:</strong> <span th:text="${app.job.location}"></span></p>
+                <p><strong>Applied On:</strong> <span th:text="${app.appliedOn}"></span></p>
+                <p><strong>Status:</strong>
+                    <span th:classappend="'status-' + ${app.status.toLowerCase()}"
+                          th:text="${app.status}"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="/jobs" class="btn btn-outline-primary">Back to Jobs</a>
+    </div>
+    
+</div>
+<footer th:replace="~{fragments_footer :: footer}"></footer>
+</body>
+</html>

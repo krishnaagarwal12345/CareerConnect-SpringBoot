@@ -1,0 +1,7 @@
+Interview Prep - Copy-ready answers
+
+1) What is CareerConnect and what did you build?
+CareerConnect is a job-portal web application built with Spring Boot, Spring Data JPA, Thymeleaf, Spring Security (BCrypt), and MySQL. I implemented user registration/login with role-based access (Job Seeker and Recruiter), basic job CRUD for recruiters, and an apply flow for job seekers. The project uses a layered architecture (Controller -> Service -> Repository -> Entity) and follows Spring Boot conventions.
+
+2) What parts did you implement personally?
+I implemented the full backend: entity models, JPA repositories, service layer, controllers, and the Thymeleaf views. I also configured Spring Security with BCrypt password encoding and integrated MySQL for persistence.

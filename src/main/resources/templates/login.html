@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CareerConnect | Login</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+<div class="login-container">
+    <h1>CareerConnect Login</h1>
+
+    <!-- Display login errors if any -->
+    <p th:if="${param.error}" style="color:red;">Invalid email or password</p>
+    <p th:if="${param.logout}" style="color:green;">You have been logged out successfully.</p>
+
+    <form th:action="@{/login}" method="post">
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="text" name="username" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="note">Don’t have an account? 
+            <a th:href="@{/register}">Register here</a>
+        </p>
+    </form>
+</div>
+
+</body>
+</html>
