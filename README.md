@@ -1,138 +1,133 @@
-# 💼 CareerConnect – Job Portal Web Application  
+💼 CareerConnect – Job Portal Application
 
-![Java](https://img.shields.io/badge/Java-17-orange?logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-green?logo=springboot)
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue?logo=mysql)
-![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template%20Engine-brightgreen?logo=thymeleaf)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+CareerConnect is a Spring Boot–based web application designed to connect job seekers and recruiters seamlessly.
+It allows users to register, log in, browse available jobs, apply to positions, and manage applications efficiently.
+Recruiters can post new job listings and view applicants — all in one intuitive platform.
 
----
+🚀 Features
+👨‍💼 For Job Seekers
 
-## 🧭 Overview  
-**CareerConnect** is a full-stack **Job Portal Web Application** built using **Spring Boot** and **Thymeleaf**.  
-It allows **job seekers** to explore and apply for jobs, while **recruiters** can post and manage job openings.  
+Register and log in securely
 
-The project demonstrates complete **Spring MVC architecture** with **Spring Security**, **JPA**, **MySQL**, and a clean responsive front-end.  
+Browse all available job listings
 
----
+Apply for jobs directly
 
-## 🚀 Features  
+View your applications on the My Applications page
 
-### 👨‍💼 For Job Seekers  
-- Register and log in securely  
-- Explore multiple job listings  
-- Apply instantly for any job  
-- View all applied jobs in **My Applications**
+🏢 For Recruiters
 
-### 🧑‍💻 For Recruiters  
-- Post new job openings  
-- Manage existing job posts  
-- View applications submitted by seekers  
+Post new job openings
 
-### 🔐 Security  
-- Integrated **Spring Security** for authentication and authorization  
-- Encrypted passwords using **BCrypt**  
-- Role-based access control for recruiters and job seekers  
+Manage and view all posted jobs
 
----
+See applications received for each job
 
-## 🏗️ Tech Stack  
-
-| Layer | Technology |
-|-------|-------------|
-| **Backend** | Spring Boot, Spring Security, Spring Data JPA |
-| **Frontend** | Thymeleaf, HTML5, CSS3, Bootstrap |
-| **Database** | MySQL |
-| **Build Tool** | Maven |
-| **Language** | Java 17 |
-| **Tools** | Eclipse, VS Code, Postman, Git, GitHub |
-
----
-
-## 📁 Project Structure  
-
+🧠 Tech Stack
+Layer	Technologies Used
+Backend	Spring Boot 3, Spring Security 6, Spring Data JPA
+Frontend	Thymeleaf, HTML5, CSS3, Bootstrap
+Database	MySQL
+Build Tool	Maven
+Version Control	Git & GitHub
+🗂️ Project Structure
 CareerConnect/
 │
 ├── src/
-│ ├── main/
-│ │ ├── java/com/krishna/careerconnect/
-│ │ │ ├── controller/ # AuthController, JobController, ApplicationController
-│ │ │ ├── entity/ # Job, Application, User entities
-│ │ │ ├── repository/ # JPA repositories
-│ │ │ ├── security/ # Security configuration
-│ │ │ ├── service/ # Business logic services
-│ │ │ └── CareerConnectApplication.java
-│ │ └── resources/
-│ │ ├── templates/ # Thymeleaf templates (HTML)
-│ │ ├── static/css/ # Custom styling
-│ │ └── application.properties
-│ └── test/
+│   ├── main/
+│   │   ├── java/com/krishna/careerconnect/
+│   │   │   ├── controller/        # AuthController, JobController, ApplicationController
+│   │   │   ├── entity/            # Job, User, Application entities
+│   │   │   ├── repository/        # JPA Repositories
+│   │   │   ├── service/           # Business logic layer
+│   │   │   └── CareerConnectApplication.java
+│   │   └── resources/
+│   │       ├── static/            # CSS, JS, Images
+│   │       ├── templates/         # Thymeleaf HTML files
+│   │       └── application.properties
+│   └── test/
 │
 ├── pom.xml
 └── README.md
 
-yaml
-Copy code
+⚙️ Setup & Installation
 
----
+Follow these steps to run the project locally 👇
 
-## ⚙️ Setup & Installation  
-
-### 1️⃣ Clone the Repository  
-```bash
+🪜 Step 1: Clone the Repository
 git clone https://github.com/krishnaagarwal12345/CareerConnect-SpringBoot.git
 cd CareerConnect-SpringBoot
 
-###2️⃣ Configure Database
-Open src/main/resources/application.properties and update credentials:
+🪜 Step 2: Configure the Database
 
-properties
-Copy code
+Open the file:
+📄 src/main/resources/application.properties
+
+And update your MySQL credentials (if required):
+
 spring.datasource.url=jdbc:mysql://localhost:3306/careerconnect
 spring.datasource.username=root
 spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-3️⃣ Run the Application
-bash
-Copy code
+
+
+✅ Make sure your MySQL server is running and a database named careerconnect is created.
+
+🪜 Step 3: Build and Run the Application
+
+Using Maven or your IDE (Eclipse / IntelliJ):
+
 mvn spring-boot:run
-Then open in browser:
+
+
+Once the server starts successfully, open your browser and go to:
 👉 http://localhost:8080
 
-🖼️ Screenshots
-📸 Add your real screenshots in the /screenshots folder
-and link them here (for example 👇)
+🪜 Step 4: Explore the Application
 
-🏠 Home / Job Listings Page
+Visit the Home Page → /jobs
 
-🧾 My Applications Page
+Register or login as a user
 
-🔐 Login / Register Page
+Apply for jobs
 
-🧑‍💻 Post a Job (Recruiter Page)
+View your applications in My Applications
 
-💡 Future Enhancements
-Add recruiter dashboard with application analytics
+(If logged in as recruiter) → Add or manage job posts
 
-Implement job search and filters
+✅ Tip: If you make any code change, you can rebuild and restart using:
 
-Resume upload & download for applicants
+mvn clean package
+java -jar target/careerconnect-0.0.1-SNAPSHOT.jar
 
-Email notifications for job updates
+🧑‍💻 Screenshots
+Page	Screenshot
+Login Page	(Add your screenshot here)
+Register Page	(Add your screenshot here)
+Job Listings	(Add your screenshot here)
+Apply Job	(Add your screenshot here)
+My Applications	(Add your screenshot here)
+🏆 Future Enhancements
 
-REST API support for mobile apps
+Add recruiter dashboard with analytics
 
-👤 Author
+Enable job filters (by role, location, salary range)
+
+Email notifications for job applications
+
+Resume upload functionality
+
+👨‍💻 Author
+
 Krishna Agarwal
-🎓 B.Tech CSE, Anand Engineering College (2022–2026)
-📧 krishnaa1420037@gmail.com
-💼 LinkedIn
-💻 GitHub
+B.Tech CSE (2022–2026) | Anand Engineering College, Agra
+📧 Email: krishnaa1420037@gmail.com
+
+🌐 GitHub: github.com/krishnaagarwal12345
 
 ⭐ Contribute
-If you like this project, please ⭐ star the repo and share your feedback!
-Pull requests are welcome for future improvements.
 
-🪄 License
-This project is open-source and available under the MIT License.
+If you like this project, please ⭐ the repository — it helps others discover it!
