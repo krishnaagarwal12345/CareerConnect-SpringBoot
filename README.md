@@ -5,7 +5,7 @@ It allows users to register, log in, browse available jobs, apply to positions, 
 Recruiters can post new job listings and view applicants — all in one intuitive platform.
 
 ## 🚀 Features
-👨‍💼 For Job Seekers
+### 👨‍💼 For Job Seekers
 
 Register and log in securely
 
@@ -15,7 +15,7 @@ Apply for jobs directly
 
 View your applications on the My Applications page
 
-🏢 For Recruiters
+### 🏢 For Recruiters
 
 Post new job openings
 
@@ -50,7 +50,7 @@ CareerConnect/
 ├── pom.xml
 └── README.md
 
-##⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 
 Follow these steps to run the project locally 👇
 
