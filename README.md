@@ -82,7 +82,8 @@ Copy code
 ```bash
 git clone https://github.com/krishnaagarwal12345/CareerConnect-SpringBoot.git
 cd CareerConnect-SpringBoot
-2️⃣ Configure Database
+
+###2️⃣ Configure Database
 Open src/main/resources/application.properties and update credentials:
 
 properties
