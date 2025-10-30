@@ -1,10 +1,10 @@
-💼 CareerConnect – Job Portal Application
+# 💼 CareerConnect – Job Portal Application
 
 CareerConnect is a Spring Boot–based web application designed to connect job seekers and recruiters seamlessly.
 It allows users to register, log in, browse available jobs, apply to positions, and manage applications efficiently.
 Recruiters can post new job listings and view applicants — all in one intuitive platform.
 
-🚀 Features
+## 🚀 Features
 👨‍💼 For Job Seekers
 
 Register and log in securely
@@ -23,14 +23,14 @@ Manage and view all posted jobs
 
 See applications received for each job
 
-🧠 Tech Stack
+## 🧠 Tech Stack
 Layer	Technologies Used
 Backend	Spring Boot 3, Spring Security 6, Spring Data JPA
 Frontend	Thymeleaf, HTML5, CSS3, Bootstrap
 Database	MySQL
 Build Tool	Maven
 Version Control	Git & GitHub
-🗂️ Project Structure
+## 🗂️ Project Structure
 CareerConnect/
 │
 ├── src/
@@ -50,15 +50,15 @@ CareerConnect/
 ├── pom.xml
 └── README.md
 
-⚙️ Setup & Installation
+##⚙️ Setup & Installation
 
 Follow these steps to run the project locally 👇
 
-🪜 Step 1: Clone the Repository
+### 🪜 Step 1: Clone the Repository
 git clone https://github.com/krishnaagarwal12345/CareerConnect-SpringBoot.git
 cd CareerConnect-SpringBoot
 
-🪜 Step 2: Configure the Database
+### 🪜 Step 2: Configure the Database
 
 Open the file:
 📄 src/main/resources/application.properties
@@ -76,7 +76,7 @@ spring.jpa.show-sql=true
 
 ✅ Make sure your MySQL server is running and a database named careerconnect is created.
 
-🪜 Step 3: Build and Run the Application
+### 🪜 Step 3: Build and Run the Application
 
 Using Maven or your IDE (Eclipse / IntelliJ):
 
@@ -86,7 +86,7 @@ mvn spring-boot:run
 Once the server starts successfully, open your browser and go to:
 👉 http://localhost:8080
 
-🪜 Step 4: Explore the Application
+### 🪜 Step 4: Explore the Application
 
 Visit the Home Page → /jobs
 
@@ -103,14 +103,14 @@ View your applications in My Applications
 mvn clean package
 java -jar target/careerconnect-0.0.1-SNAPSHOT.jar
 
-🧑‍💻 Screenshots
+## 🧑‍💻 Screenshots
 Page	Screenshot
 Login Page	(Add your screenshot here)
 Register Page	(Add your screenshot here)
 Job Listings	(Add your screenshot here)
 Apply Job	(Add your screenshot here)
 My Applications	(Add your screenshot here)
-🏆 Future Enhancements
+## 🏆 Future Enhancements
 
 Add recruiter dashboard with analytics
 
@@ -120,14 +120,14 @@ Email notifications for job applications
 
 Resume upload functionality
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Krishna Agarwal
 B.Tech CSE (2022–2026) | Anand Engineering College, Agra
-📧 Email: krishnaa1420037@gmail.com
+## 📧 Email: krishnaa1420037@gmail.com
 
 🌐 GitHub: github.com/krishnaagarwal12345
 
-⭐ Contribute
+## ⭐ Contribute
 
 If you like this project, please ⭐ the repository — it helps others discover it!
