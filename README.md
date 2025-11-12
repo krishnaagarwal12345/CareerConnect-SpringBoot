@@ -103,13 +103,7 @@ View your applications in My Applications
 mvn clean package
 java -jar target/careerconnect-0.0.1-SNAPSHOT.jar
 
-## 🧑‍💻 Screenshots
-Page	Screenshot
-Login Page	(Add your screenshot here)
-Register Page	(Add your screenshot here)
-Job Listings	(Add your screenshot here)
-Apply Job	(Add your screenshot here)
-My Applications	(Add your screenshot here)
+
 ## 🏆 Future Enhancements
 
 Add recruiter dashboard with analytics
