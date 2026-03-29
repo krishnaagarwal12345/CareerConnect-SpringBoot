@@ -1,4 +1,4 @@
-# 💼 CareerConnect – Job Portal Application
+# 💼 Job Connector – Job Portal Application
 
 CareerConnect is a Spring Boot–based web application designed to connect job seekers and recruiters seamlessly.
 It allows users to register, log in, browse available jobs, apply to positions, and manage applications efficiently.
